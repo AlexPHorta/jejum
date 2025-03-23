@@ -1,0 +1,6 @@
+[submodule "themes/themes/linkita"]
+	path = themes/themes/linkita
+	url = https://codeberg.org/salif/linkita.git
+[submodule "themes/linkita"]
+	path = themes/linkita
+	url = https://codeberg.org/salif/linkita.git
