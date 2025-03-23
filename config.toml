@@ -5,7 +5,9 @@ base_url = "https://orthofast.org"
 compile_sass = true
 
 # Whether to build a search index to be used later on by a JavaScript library
-build_search_index = false
+build_search_index = true
+
+theme = "linkita"
 
 [markdown]
 # Whether to do syntax highlighting
@@ -14,3 +16,59 @@ highlight_code = false
 
 [extra]
 # Put all your custom variables here
+# The default language. (type: string;)
+default_language = "pt"
+
+# The default author for pages. See `extra.profiles`. (type: string;)
+author = "Alexandre"
+
+# The site title. (type: string;)
+title = "Teste"
+
+# The site description. (type: string;)
+description = "Receitas para o jejum ortodoxo."
+
+# Automatically generate a feed. (type: boolean;)
+generate_feeds = true
+generate_sitemap = true
+
+# The filenames to use for the feeds. (type: array of strings;)
+feed_filenames = ["atom.xml"] # or ["rss.xml"]
+
+# Build a search index from the pages and section content
+#  for `default_language`. (type: boolean;)
+# build_search_index = true
+
+# The top menu. See `extra.menus`.
+# (type: string; no default value;)
+header_menu_name = "menu_principal"
+
+[extra.menus]
+menu_name = [
+  {url = "$BASE_URL/pages/arquivo/", name = "Arquivo"},
+  {url = "$BASE_URL/categorias", name = "Categorias"},
+  {url = "$BASE_URL/tags/", name = "Tags"},
+  {url = "$BASE_URL/pages/sobre/", name = "Sobre"},
+]
+
+[[taxonomies]]
+name = "categorias"
+feed = true
+paginate_by = 5
+
+[[taxonomies]]
+name = "tags"
+feed = true
+paginate_by = 5
+
+[extra.footer]
+# Replace with the correct year.
+# (type: number; default value: current year;)
+since = 2025
+
+# Replace with the url of the license you want.
+# (type: string; no default value; supports `$BASE_URL`;)
+license_url = "https://creativecommons.org/licenses/by-sa/4.0/deed"
+
+# Replace `Your Name` with your name and `CC BY-SA 4.0` with the name of the license you want
+copyright = "&copy; $YEAR Buey &vert; [CC BY-SA 4.0]($LICENSE_URL)"
