@@ -51,11 +51,14 @@ in_search_index = true
 # Template to use to render this page.
 template = "page.html"
 
-# The taxonomies for this page. The keys need to be the same as the taxonomy
-# names configured in `config.toml` and the values are an array of String objects. For example,
-# tags = ["rust", "web"].
+# As tags para a postagem
+# VERMELHO - abster de carne, derivados de leite, ovos, peixe, azeite, vinho
+# AMARELO - abster de carne, derivados de leite, ovos, peixe, azeite
+# VERDE - abster de carne, derivados de leite, ovos, peixe
+# AZUL - abster de carne, derivados de leite, ovos
+# LARANJA - abster de carne
 [taxonomies]
-tags = ["ensopado", "grão-de-bico", "alho", "cebola", "louro", "tomilho", "orégano", "sal", "pimenta", "limão"]
+tags = ["ensopado", "grão-de-bico", "alho", "cebola", "louro", "tomilho", "orégano", "sal", "pimenta", "limão", "VERMELHO", "AMARELO", "VERDE", "AZUL", "LARANJA"]
 +++
 ## Ingredientes
 

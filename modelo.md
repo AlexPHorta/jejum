@@ -1,6 +1,6 @@
 +++
-title = "Arroz Pilaf com Cogumelos"
-description = ""
+title = "Modelo"
+description = "Modelo de Descrição"
 
 # A data da postagem. Usar o formato YYY-MM-DD.
 date = 2025-03-22
@@ -31,6 +31,7 @@ template = "page.html"
 # LARANJA - abster de carne
 [taxonomies]
 tags = ["arroz", "cogumelos", "cebola", "cenoura", "caldo de legumes", "sal", "pimenta", "salsa", "VERMELHO", "AMARELO", "VERDE", "AZUL", "LARANJA"]
+
 +++
 ## Ingredientes
 
